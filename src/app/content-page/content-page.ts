@@ -1,9 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
+import { POSTS } from '../posts';
 
 @Component({
-  imports: [],
   selector: 'app-content-page',
-  styleUrl: './content-page.css',
+  imports: [],
   templateUrl: './content-page.html',
+  styleUrl: './content-page.css'
 })
-export class ContentPage {}
+export class ContentPage {
+  id = input.required<string>();
+
+  post = computed(() =>
+    POSTS.find(post => post.id === this.id())
+  );
+}

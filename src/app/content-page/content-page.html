@@ -1,1 +1,13 @@
-<p>content-page works!</p>
+@if (post(); as p) {
+  <article class="content-page">
+    <span class="content-page-category">{{ p.category }}</span>
+    <h1 class="content-page-title">{{ p.title }}</h1>
+    <div class="content-page-meta">
+      <span>Por {{ p.author }}</span>
+      <span>{{ p.date }}</span>
+    </div>
+    <p class="content-page-body">{{ p.content }}</p>
+  </article>
+} @else {
+  <p>Post não encontrado.</p>
+}

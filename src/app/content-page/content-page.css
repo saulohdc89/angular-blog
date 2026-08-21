@@ -1,0 +1,33 @@
+.content-page {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  max-width: 720px;
+}
+
+.content-page-category {
+  color: #6c5ce7;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.content-page-title {
+  font-size: 2rem;
+  margin: 12px 0;
+}
+
+.content-page-meta {
+  display: flex;
+  gap: 16px;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-bottom: 24px;
+}
+
+.content-page-body {
+  line-height: 1.7;
+  color: #374151;
+}

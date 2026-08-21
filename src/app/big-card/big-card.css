@@ -1,4 +1,8 @@
 .big-card {
+  text-decoration: none;
+}
+
+.big-card {
   background-color: #ffffff;
   border-radius: 16px;
   padding: 32px;

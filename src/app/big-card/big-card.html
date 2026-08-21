@@ -1,4 +1,4 @@
-<div class="big-card">
+<a class="big-card" [routerLink]="['/post', id()]">
   <span class="big-card-category">{{ category() }}</span>
   <h2 class="big-card-title">{{ title() }}</h2>
   <p class="big-card-description">{{ description() }}</p>
@@ -6,4 +6,4 @@
     <span class="big-card-author">Por {{ author() }}</span>
     <span class="big-card-date">{{ date() }}</span>
   </div>
-</div>
+</a>

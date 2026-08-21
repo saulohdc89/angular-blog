@@ -1,8 +1,8 @@
-<div class="small-card">
+<a class="small-card" [routerLink]="['/post', id()]">
   <span class="small-card-category">{{ category() }}</span>
   <h3 class="small-card-title">{{ title() }}</h3>
   <div class="small-card-footer">
     <span class="small-card-author">Por {{ author() }}</span>
     <span class="small-card-date">{{ date() }}</span>
   </div>
-</div>
+</a>

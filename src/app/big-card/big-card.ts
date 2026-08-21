@@ -1,9 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-big-card',
-  styleUrl: './big-card.css',
+  imports: [],
   templateUrl: './big-card.html',
+  styleUrl: './big-card.css'
 })
-export class BigCard {}
+export class BigCard {
+  category = input.required<string>();
+  title = input.required<string>();
+  description = input.required<string>();
+  author = input.required<string>();
+  date = input.required<string>();
+}

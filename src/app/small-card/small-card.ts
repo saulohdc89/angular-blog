@@ -1,9 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
-  imports: [],
   selector: 'app-small-card',
-  styleUrl: './small-card.css',
+  imports: [],
   templateUrl: './small-card.html',
+  styleUrl: './small-card.css'
 })
-export class SmallCard {}
+export class SmallCard {
+  category = input.required<string>();
+  title = input.required<string>();
+  author = input.required<string>();
+  date = input.required<string>();
+}

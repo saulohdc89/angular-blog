@@ -1,11 +1,9 @@
 <div class="big-card">
-  <span class="big-card-category">Tecnologia</span>
-  <h2 class="big-card-title">Como a Inteligência Artificial está mudando o desenvolvimento web</h2>
-  <p class="big-card-description">
-    Um panorama sobre as principais mudanças que ferramentas de IA trouxeram para o dia a dia dos desenvolvedores.
-  </p>
+  <span class="big-card-category">{{ category() }}</span>
+  <h2 class="big-card-title">{{ title() }}</h2>
+  <p class="big-card-description">{{ description() }}</p>
   <div class="big-card-footer">
-    <span class="big-card-author">Por Saulo</span>
-    <span class="big-card-date">21 de agosto de 2026</span>
+    <span class="big-card-author">Por {{ author() }}</span>
+    <span class="big-card-date">{{ date() }}</span>
   </div>
 </div>

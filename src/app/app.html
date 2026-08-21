@@ -1,36 +1,5 @@
 <app-menu></app-menu>
 
-<main class="content">
-  <app-big-card
-    [category]="'Tecnologia'"
-    [title]="'Como a Inteligência Artificial está mudando o desenvolvimento web'"
-    [description]="'Um panorama sobre as principais mudanças que ferramentas de IA trouxeram para o dia a dia dos desenvolvedores.'"
-    [author]="'Saulo'"
-    [date]="'21 de agosto de 2026'">
-  </app-big-card>
-
-  <div class="small-cards-grid">
-    <app-small-card
-      [category]="'Design'"
-      [title]="'5 tendências de UI para 2027'"
-      [author]="'Saulo'"
-      [date]="'18 de agosto de 2026'">
-    </app-small-card>
-
-    <app-small-card
-      [category]="'Carreira'"
-      [title]="'Como migrar de Angular 14 para Angular 22'"
-      [author]="'Saulo'"
-      [date]="'15 de agosto de 2026'">
-    </app-small-card>
-
-    <app-small-card
-      [category]="'Tecnologia'"
-      [title]="'Signals: o que muda na forma de programar em Angular'"
-      [author]="'Saulo'"
-      [date]="'10 de agosto de 2026'">
-    </app-small-card>
-  </div>
+<main>
+  <router-outlet />
 </main>
-
-<router-outlet />
